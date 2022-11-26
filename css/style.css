@@ -24,3 +24,10 @@ header {
     /* background-color: yellow; */
     text-align: center;
 }
+
+@media screen and (max-width: 600px) {
+    .welkom {
+        font-size: 50px;
+        text-decoration: underline;
+    }    
+}
