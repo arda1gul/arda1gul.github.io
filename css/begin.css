@@ -93,3 +93,16 @@ body {
     font-family: easports;
     margin-top: 70px;
 }
+
+@media screen and (max-width: 600px) {
+    .footer,.header {
+        display: inline-block;
+        padding: 30px;
+        font-size: 20px;
+        margin-right: 20px;
+        overflow: hidden;
+        justify-items: left;
+        content: left;
+        float: right;
+    }
+}
