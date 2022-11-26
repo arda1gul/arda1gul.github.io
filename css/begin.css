@@ -104,5 +104,6 @@ body {
         justify-items: left;
         content: left;
         float: right;
+        color: black;
     }
 }
