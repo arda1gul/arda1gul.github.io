@@ -18,12 +18,15 @@ body {
     margin-top: 300px;
 } */
 
+.speler2 {
+    font-family: easports;
+}
+
 .wachtwoord {
     font-family: easports;
 }
 
-.password {
-    font-family: easports;
+.speler2 {
     text-align: center;
     background-color: transparent;
     cursor: pointer;
@@ -31,6 +34,8 @@ body {
     font-size: 20px;
     border-radius: 10px;
 }
+
+
 
 .submit {
     font-family: easports;
@@ -48,8 +53,9 @@ body {
     text-align: center;
     margin-top: 150px;
     width: 300px;
-    height: 90px;
-    margin-left: 700px;
+    height: 200px;
+    float: right;
+    margin-right: 350px;
     border-radius: 20px;
     font-size: 25px;
 }
@@ -62,8 +68,9 @@ body {
     padding: 100px;
     height: 200px;
     border-radius: 20px;
-    margin-left: 700px;
-    margin-top: 50px;
+    float: left;
+    margin-left: 350px;
+    margin-top: 150px;
 }
 
 .myName {
@@ -92,6 +99,11 @@ body {
 .naam {
     font-family: easports;
     margin-top: 70px;
+}
+
+.naamTwee {
+        font-family: easports;
+        margin-top: 70px;
 }
 
 @media screen and (max-width: 600px) {
