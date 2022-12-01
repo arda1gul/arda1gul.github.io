@@ -11,6 +11,9 @@ console.log("Begin loaded")
 //     }
 // }
 
+const playerScoreOne = 0;
+const playerScoreTwo = 0;
+
 document.querySelector(".submitName").onclick = function() {
     let playerOne = document.querySelector(".name").value;
     document.querySelector(".naam").innerHTML = `Welkom ${playerOne}`
@@ -21,3 +24,6 @@ document.querySelector(".submit").onclick = function() {
     document.querySelector(".naamTwee").innerHTML = `Welkom ${playerTwo}`
     window.location.href = "scherm2.html"
 }
+
+document.querySelector(".player1").innerHTML = `${playerOne} heeft ${playerScoreOne}`
+document.querySelector(".player2").innerHTML = `${playerTwo} heeft ${playerScoreTwo}`

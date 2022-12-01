@@ -18,10 +18,9 @@
 
 
 .titel {
-    margin-left: 75px;
+    margin-left: 70px;
     text-align: center;
     font-size: 60px;
-    font-family: firstcoffee;
     src: url("/fonts/firstcoffee.ttf");
     color: white;
 }
@@ -30,7 +29,7 @@
 
 .grid-container {
     display: grid;
-    padding: 10px;
+    /* padding: 10px; */
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(3, 1fr);
     height: 400px;
@@ -60,15 +59,32 @@
 }
 
 header {
-    background-color: transparent;
-    border-color: white;
+    /* background-color: blue; */
+    /* border: 2px solid white; */
+    width: 1600px;
+    height: 150px;
+    border-radius: 10px;
+    float: left;
 }
+
 
 .scoreboard {
+    background-color: transparent;
+    width: 200px;
+    height: 150px;
     color: white;
     font-size: 20px;
+    text-align: center;
+    float: left;
+    border: 2px solid white;
+    border-radius: 10px;
+    margin-top: 100px;
 }
 
-li {
+.player1 {
+    color: white;
+}
+
+.player2 {
     color: white;
 }
