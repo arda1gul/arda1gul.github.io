@@ -19,4 +19,5 @@ document.querySelector(".submitName").onclick = function() {
 document.querySelector(".submit").onclick = function() {
     let playerTwo = document.querySelector(".speler2").value;
     document.querySelector(".naamTwee").innerHTML = `Welkom ${playerTwo}`
+    window.location.href = "scherm2.html"
 }
