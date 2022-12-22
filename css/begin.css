@@ -48,7 +48,7 @@ body {
 
 .header {
     background-color: grey;
-    padding: 100px;
+    padding: 70px;
     margin-bottom: 100px;
     text-align: center;
     margin-top: 150px;
@@ -60,18 +60,18 @@ body {
     font-size: 25px;
 }
 
-/* .footer {
+.footer {
     background-color: grey;
-    width: 600px;
+    width: 300px;
     text-align: center;
     font-size: 25px;
-    padding: 100px;
+    padding: 70px;
     height: 200px;
     border-radius: 20px;
     float: left;
     margin-left: 250px;
     margin-top: 150px;
-} */
+}
 
 .myName {
     font-family: easports;

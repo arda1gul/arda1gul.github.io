@@ -25,13 +25,5 @@ document.querySelector(".submit").onclick = function () {
     checkName()
 }
 
-function checkName() {
-    if (playerOne == "" & playerTwo == "") {
-        console.log("Goedzo")
-    } else {
-        console.log("Loading...")
-        window.location.href = "scherm2.html"
-    }
-}
 
 
