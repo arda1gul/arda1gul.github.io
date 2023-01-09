@@ -27,19 +27,24 @@ const enableButtons = () => {
 const winFunction = (letter) => {
     if (letter == "X") {
         alert('X heeft gewonnen');
+        location.reload()
     } else {
         alert('O heeft gewonnen');
+        location.reload()
     }
 };
 
 const drawFunction = () => {
     alert('It is a draw');
+    location.reload()
 };
 
 restartBtn.addEventListener("click", () => {
     count = 0;
     enableButtons();
 });
+
+
 
 const winChecker = () => {
     for (let i of winningPattern) {
@@ -58,6 +63,9 @@ const winChecker = () => {
 
 Button.forEach((element) => {
     element.addEventListener("click", () => {
+        if (element.innerText != "") {
+            return;
+        }
         if (xTurn) {
             xTurn = false;
             element.innerText = "X";
