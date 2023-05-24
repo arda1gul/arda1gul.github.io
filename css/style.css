@@ -3,6 +3,28 @@ body {
 }
 
 .sidebar {
-    width: 130px;
+    width: 100px;
+    float: left;
+    height: 100vh;
     background-color: darkgrey;
+}
+
+.info {
+    font-size: 25px;
+    font-weight: bold;
+    margin-right: 100px;
+    gap: 30px;
+}
+
+.home:hover,.aboutme:hover,.projects:hover,.contact:hover {
+    opacity: 1;
+    text-decoration: underline;
+    text-decoration-line: underline;
+    text-decoration-color: white;
+    text-underline-offset: 5px;
+    color: white;
+}
+
+.home,.aboutme,.projects,.contact {
+    color: white;
 }
