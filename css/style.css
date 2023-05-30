@@ -42,3 +42,10 @@ body {
 .intro {
     font-size: 20px;
 }
+
+.img {
+    height: 300px;
+    width: 600px;
+    margin-top: 370px;
+    margin-left: 300px;
+}
