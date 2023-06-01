@@ -1,13 +1,19 @@
 body {
-    background-color: white;
+    background-color: grey;
     cursor: default;
+    overflow: hidden;
 }
 
 .sidebar {
     width: 100px;
     float: left;
     height: 100vh;
-    background-color: white;
+}
+
+.sidebar-two {
+    width: 100px;
+    float: left;
+    height: 100vh;
 }
 
 .info {
@@ -37,6 +43,7 @@ body {
 .arda {
     font-size: 60px;
     letter-spacing: 20px;
+    background-color: grey;
 }
 
 .intro {
@@ -48,4 +55,30 @@ body {
     width: 600px;
     margin-top: 370px;
     margin-left: 300px;
+}
+
+.about-me {
+    height: 70vh;
+    font-size: 50px;
+} 
+
+.title-aboutme {
+    font-size: 80px;
+    letter-spacing: 20px;
+    background-color: grey;
+}
+
+.text-aboutme {
+    width: 500px;
+    margin-top: 50px;
+    font-size: 20px;
+}
+
+.progress {
+    background-color: transparent;
+    margin-top: 20px;
+}
+
+.bar {
+    margin-top: 300px;
 }
