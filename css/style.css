@@ -4,11 +4,6 @@ body {
     overflow: hidden;
 }
 
-.sidebar {
-    width: 100px;
-    float: left;
-    height: 100vh;
-}
 
 .sidebar-two {
     width: 100px;
@@ -48,12 +43,14 @@ body {
 
 .arda {
     font-size: 60px;
-    letter-spacing: 20px;
+    letter-spacing: 10px;
     background-color: grey;
+    font-weight: 600;
 }
 
 .intro {
     font-size: 20px;
+    margin-top: 300px;
 }
 
 .img {
@@ -64,7 +61,6 @@ body {
 }
 
 .about-me {
-    height: 70vh;
     font-size: 50px;
 }
 
@@ -109,6 +105,8 @@ body {
 
 .bar {
     margin-top: 270px;
-    /* float: left; */
     margin-left: 580px;
+}
+
+.arda:hover {
 }
