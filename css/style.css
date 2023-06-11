@@ -53,28 +53,13 @@ body {
     margin-top: 300px;
 }
 
-.img {
-    height: 300px;
-    width: 600px;
-    margin-top: 370px;
-    margin-left: 300px;
-}
-
-.about-me {
-    font-size: 50px;
-}
 
 .title-aboutme {
     font-size: 80px;
     letter-spacing: 20px;
     background-color: grey;
     font-weight: 500;
-}
-
-.text-aboutme {
-    width: 605px;
-    margin-top: 30px;
-    font-size: 15px;
+    margin-top: 70px;
 }
 
 .progress-bar-html {
@@ -95,17 +80,15 @@ body {
 
 .progress {
     border-radius: 10px;
-    margin-top: 10px;
     font-size: 10px;
     background-color: lightgrey;
     height: 40px;
-    margin-left: 200px;
-    width: 500px;
+    margin-top: 10px;
+    width: 800px;
 }
 
 .bar {
-    margin-top: 270px;
-    margin-left: 580px;
+    margin-top: 400px;
 }
 
 .arda:hover {
