@@ -91,5 +91,32 @@ body {
     margin-top: 400px;
 }
 
-.arda:hover {
+.p-project {
+    font-size: 80px;
+    letter-spacing: 10px;
+}
+
+.wrapper {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 100px 200px 200px 200px 100px;
+    grid-template-rows: repeat(12, 40px);
+}
+
+.header {
+    grid-row: 6;
+    grid-column: 10;
+}
+
+.labels {
+    font-size: 35px;
+}
+
+.inputs {
+    font-size: 20px;
+    width: 500px;
+}
+
+.message {
+    height: 140px;
 }
