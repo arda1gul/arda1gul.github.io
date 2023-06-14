@@ -104,8 +104,8 @@ body {
 }
 
 .header {
-    grid-row: 6;
-    grid-column: 10;
+    grid-row: 8;
+    grid-column: 3;
 }
 
 .labels {
@@ -117,6 +117,7 @@ body {
     width: 500px;
 }
 
-.message {
-    height: 140px;
+.sidebar {
+    grid-row: 7;
+    grid-column: 8;
 }
