@@ -1,8 +1,7 @@
 body {
     background-color: grey;
     cursor: default;
-    overflow-y: scroll;
-    overflow-x: hidden;
+    overflow: scroll;
 }
 
 
