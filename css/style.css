@@ -97,7 +97,7 @@ body {
 }
 
 .p-project {
-    font-size: 80px;
+    font-size: 70px;
     letter-spacing: 10px;
 }
 
@@ -131,4 +131,10 @@ body {
 .nav {
     width: 1150px;
     height: 100px;
+    position: absolute;
+}
+
+.send-email {
+    height: 400px;
+    width: 600px;
 }
