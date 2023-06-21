@@ -142,3 +142,37 @@ body {
 .fix-image {
     height: 260px;
 }
+
+.header-about {
+    grid-row: 5;
+    grid-column: 6;
+    width: 1000px;
+    border: 2px solid black;
+    height: 90px;
+    border: none;
+    border-bottom: 2px solid black;
+}
+
+.about-portfolio {
+    font-size: 50px;
+    letter-spacing: 20px;
+    background-color: grey;
+    font-weight: 500;
+}
+
+.kleuren-schema {
+    grid-row: 8;
+    grid-column: 6;
+}
+
+.sitemap {
+    grid-row: 8;
+    grid-column: 6;
+    margin-left: 350px;
+}
+
+.inspiration {
+    margin-left: 700px;
+    grid-row: 8;
+    grid-column: 6;
+}
