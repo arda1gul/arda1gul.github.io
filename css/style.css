@@ -138,3 +138,7 @@ body {
     height: 400px;
     width: 600px;
 }
+
+.fix-image {
+    height: 260px;
+}
