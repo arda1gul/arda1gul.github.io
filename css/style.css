@@ -160,19 +160,24 @@ body {
     font-weight: 500;
 }
 
-.kleuren-schema {
-    grid-row: 8;
+.img-cv {
+    grid-row: 9;
     grid-column: 6;
 }
 
-.sitemap {
-    grid-row: 8;
+.cv-link {
+    grid-row: 9;
+    text-align: right;
+    background-color: none;
+    border: 2px solid white;
     grid-column: 6;
-    margin-left: 350px;
+    font-size: 40px;
+    width: 100%;
+    height: 70px;
+    border-radius: 7px;
+    text-decoration: none;
 }
 
-.inspiration {
-    margin-left: 700px;
-    grid-row: 8;
-    grid-column: 6;
+.cv-link:hover {
+    color: darkblue;
 }
