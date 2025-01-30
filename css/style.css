@@ -129,8 +129,6 @@ body {
 
 
 .nav {
-    width: 1150px;
-    height: 100px;
     position: absolute;
 }
 
@@ -180,4 +178,4 @@ body {
 
 .cv-link:hover {
     color: darkblue;
-}
+}   
