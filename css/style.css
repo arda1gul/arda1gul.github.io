@@ -60,7 +60,7 @@ body {
     letter-spacing: 20px;
     background-color: grey;
     font-weight: 500;
-    margin-top: 70px;
+    margin-top: 20px;
 }
 
 .progress-bar-html {
@@ -164,16 +164,10 @@ body {
 }
 
 .cv-link {
-    grid-row: 9;
-    text-align: right;
+    letter-spacing: 3px;
     background-color: none;
-    border: 2px solid white;
-    grid-column: 6;
-    font-size: 40px;
-    width: 100%;
-    height: 70px;
-    border-radius: 7px;
-    text-decoration: none;
+    border: 1px solid white;
+    padding: 10px;
 }
 
 .cv-link:hover {
