@@ -1,0 +1,484 @@
+/* ===== Algemene stijl ===== */
+body {
+    font-family: 'Poppins', sans-serif;
+    background: radial-gradient(circle at top left, #0d1117, #000);
+    color: #222;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+/* ===== Zijbalk Navigatie ===== */
+.side-nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 90px;
+    background: rgba(13, 17, 23, 0.85);
+    backdrop-filter: blur(12px);
+    border-right: 1px solid rgba(255, 255, 255, 0.05);
+    z-index: 1000;
+    transition: width 0.3s ease;
+}
+
+.side-nav:hover {
+    width: 200px;
+}
+
+.side-nav .nav {
+    width: 100%;
+}
+
+.side-nav .nav-link {
+    color: #ccc;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 15px 25px;
+    transition: color 0.3s, background 0.3s;
+    white-space: nowrap;
+}
+
+.side-nav .nav-link:hover {
+    color: #0d6efd;
+    background: rgba(255, 255, 255, 0.05);
+}
+
+/* Icoon grootte en centreren */
+.side-nav .nav-link i {
+    font-size: 1.5rem; /* iets groter voor social icons */
+    min-width: 30px;   /* zorgt dat span netjes uitklapt */
+    text-align: center;
+}
+
+/* Hover effect voor icons */
+.side-nav .nav-link:hover i {
+    color: #0d6efd; /* accentkleur bij hover */
+}
+
+/* Social link text laten verschijnen */
+.side-nav .nav-link span {
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.side-nav:hover .nav-link span {
+    opacity: 1;
+}
+
+
+.logo {
+    color: #fff; /* zorgt dat de tekst zichtbaar is */
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+/* ===== Content spacing rechts van zijbalk ===== */
+.content-wrapper {
+    margin-left: 90px;
+    transition: margin-left 0.3s;
+}
+
+.side-nav:hover~.content-wrapper {
+    margin-left: 200px;
+}
+
+/* Responsive (mobiel) */
+@media (max-width: 992px) {
+    .side-nav {
+        width: 100%;
+        height: auto;
+        position: static;
+        flex-direction: row;
+        justify-content: center;
+        border-right: none;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    }
+
+    .side-nav .nav {
+        flex-direction: row;
+    }
+
+    .side-nav .nav-link span {
+        opacity: 1;
+    }
+
+    .content-wrapper {
+        margin-left: 0;
+    }
+}
+
+
+/* ===== Hero Sectie Upgrade ===== */
+.hero-section {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+    background: radial-gradient(circle at 20% 20%, rgba(13, 110, 253, 0.2), transparent 60%),
+        radial-gradient(circle at 80% 80%, rgba(255, 255, 255, 0.05), transparent 70%),
+        #0d1117;
+}
+
+/* Floating gradient circles */
+.circle {
+    position: absolute;
+    border-radius: 50%;
+    opacity: 0.3;
+    animation: float 20s infinite linear;
+}
+
+.circle-1 {
+    width: 200px;
+    height: 200px;
+    background: #0d6efd;
+    top: 10%;
+    left: 15%;
+}
+
+.circle-2 {
+    width: 300px;
+    height: 300px;
+    background: #00d4ff;
+    bottom: 10%;
+    right: 10%;
+    animation-duration: 25s;
+}
+
+.circle-3 {
+    width: 150px;
+    height: 150px;
+    background: #6610f2;
+    top: 40%;
+    right: 25%;
+    animation-duration: 30s;
+}
+
+@keyframes float {
+    0% {
+        transform: translateY(0px) translateX(0px);
+    }
+
+    50% {
+        transform: translateY(-30px) translateX(20px);
+    }
+
+    100% {
+        transform: translateY(0px) translateX(0px);
+    }
+}
+
+/* Typing effect */
+.typing-text {
+    font-size: 1.5rem;
+    color: #00d4ff;
+    font-weight: 500;
+    min-height: 2em;
+    font-family: 'Courier New', monospace;
+}
+
+/* ===== Over mij ===== */
+.about-section {
+    background: radial-gradient(circle at top left, #0d1117, #000);
+    color: white;
+}
+
+.text-gradient {
+    background: linear-gradient(90deg, #0d6efd, #00d4ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.btn-gradient {
+    background: linear-gradient(90deg, #0d6efd, #00d4ff);
+    border: none;
+    color: #fff;
+    padding: 10px 25px;
+    border-radius: 50px;
+    transition: 0.3s;
+}
+
+.btn-gradient:hover {
+    opacity: 0.9;
+    transform: translateY(-2px);
+}
+
+
+
+/* ===== Vaardigheden ===== */
+.bg-section {
+    background: linear-gradient(135deg, #0d1117, #001a35);
+}
+
+.glass-box {
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: 10px;
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.glass-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(13, 110, 253, 0.3);
+}
+
+/* ===== Projecten ===== */
+.project-card {
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+.project-card img {
+    border-bottom: 2px solid #0d6efd;
+}
+
+/* ===== Footer ===== */
+footer {
+    background-color: #000;
+    font-size: 0.9rem;
+}
+
+/* ===== Animaties ===== */
+.fade-in {
+    animation: fadeIn 2s ease-in-out forwards;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* ===== Scroll Animatie ===== */
+.scroll-animate {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.scroll-animate.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Terminal stijl passend bij de website */
+.terminal {
+    background: #0d1117;
+    /* matcht hero achtergrond */
+    color: #00d4ff;
+    /* standaard tekstkleur prompt */
+    font-family: 'Courier New', monospace;
+    padding: 20px;
+    border-radius: 8px;
+    display: inline-block;
+    min-width: 350px;
+    box-shadow: 0 0 20px rgba(0, 212, 255, 0.2);
+}
+
+.terminal-text {
+    font-size: 1.1rem;
+}
+
+.path {
+    color: #0d6efd;
+    /* blauw van de site / highlight */
+    font-weight: bold;
+}
+
+.prompt-text {
+    margin-left: 5px;
+    color: #00d4ff;
+    /* cyaan, past bij gradient */
+}
+
+.cursor {
+    display: inline-block;
+    width: 10px;
+    background-color: #ffffff;
+    /* knipperende cursor wit */
+    animation: blink 1s infinite;
+}
+
+@keyframes blink {
+
+    0%,
+    50% {
+        opacity: 1;
+    }
+
+    51%,
+    100% {
+        opacity: 0;
+    }
+}
+
+.terminal-buttons {
+    margin-top: 10px;
+    display: flex;
+    gap: 10px;
+}
+
+.terminal-btn {
+    background: #0d1117;
+    /* dark theme */
+    border: 1px solid #0d6efd;
+    /* blauw accent */
+    color: #0d6efd;
+    padding: 5px 12px;
+    cursor: pointer;
+    font-family: 'Courier New', monospace;
+    transition: 0.2s;
+    border-radius: 4px;
+}
+
+.terminal-btn:hover {
+    background: linear-gradient(90deg, #0d6efd, #00d4ff);
+    color: #0d1117;
+}
+
+.terminal-response {
+    margin-top: 10px;
+    font-size: 1rem;
+    color: #ffffff;
+    /* wit voor leesbaarheid */
+}
+
+/* ===== Algemene responsive aanpassingen ===== */
+@media (max-width: 992px) {
+  /* Zijbalk verandert naar bovenbalk */
+  .side-nav {
+    width: 100%;
+    height: auto;
+    position: static;
+    flex-direction: row;
+    justify-content: center;
+    border-right: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  }
+
+  .side-nav:hover {
+    width: 100%;
+  }
+
+  .side-nav .nav {
+    flex-direction: row;
+  }
+
+  .side-nav .nav-link span {
+    opacity: 1;
+  }
+
+  .content-wrapper {
+    margin-left: 0;
+  }
+
+  .side-nav:hover~.content-wrapper {
+    margin-left: 0;
+  }
+}
+
+/* ===== Hero sectie responsive ===== */
+@media (max-width: 768px) {
+  .hero-section {
+    height: auto;
+    padding: 80px 20px;
+    text-align: center;
+  }
+
+  .circle-1,
+  .circle-2,
+  .circle-3 {
+    width: 100px;
+    height: 100px;
+    top: auto;
+    bottom: auto;
+    right: auto;
+    left: auto;
+    opacity: 0.15;
+  }
+
+  .circle-1 { top: 5%; left: 10%; }
+  .circle-2 { bottom: 5%; right: 10%; }
+  .circle-3 { top: 40%; right: 20%; }
+
+  .typing-text {
+    font-size: 1.2rem;
+  }
+}
+
+/* ===== Over mij sectie responsive ===== */
+@media (max-width: 768px) {
+  .about-section .col-lg-8 {
+    padding: 0 15px;
+  }
+
+  .about-section h2 {
+    font-size: 2rem;
+  }
+
+  .about-section p {
+    font-size: 1rem;
+  }
+
+  .btn-gradient {
+    padding: 8px 20px;
+    font-size: 0.9rem;
+  }
+}
+
+/* ===== Vaardigheden responsive ===== */
+@media (max-width: 768px) {
+  .skill-box {
+    margin-bottom: 20px;
+  }
+}
+
+/* ===== Projecten responsive ===== */
+@media (max-width: 768px) {
+  .project-card img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+/* ===== Terminal responsive ===== */
+@media (max-width: 576px) {
+  .terminal {
+    min-width: 100%;
+    padding: 15px;
+    font-size: 0.9rem;
+  }
+
+  .terminal-buttons {
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  .terminal-btn {
+    width: 100%;
+    padding: 8px;
+  }
+
+  .cursor {
+    width: 6px;
+  }
+
+  .prompt-text {
+    display: block;
+  }
+
+  .path {
+    display: block;
+    margin-bottom: 5px;
+  }
+}
