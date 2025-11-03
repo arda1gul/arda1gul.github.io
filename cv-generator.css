@@ -1,0 +1,378 @@
+        body {
+            background-color: #f4f6f8;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        .container {
+            max-width: 900px;
+        }
+
+        /* Formulier stijl */
+        form {
+            background-color: #fff;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        form .form-label {
+            font-weight: 600;
+            font-size: 14px;
+        }
+
+        form input,
+        form textarea {
+            font-size: 14px;
+            padding: 6px 10px;
+        }
+
+        /* Thema preview */
+        .theme-preview {
+            padding: 8px;
+            border-radius: 5px;
+            text-align: center;
+            cursor: pointer;
+            margin-right: 10px;
+            width: 90px;
+            font-size: 13px;
+            border: 1px solid #ccc;
+            display: inline-block;
+            transition: all 0.2s;
+        }
+
+        .theme-preview:hover {
+            transform: scale(1.05);
+            border-color: #007bff;
+        }
+
+        .theme-selected {
+            border-color: #007bff;
+            background-color: #007bff;
+            color: #fff;
+        }
+
+        /* CV output A4 */
+        #cv-output {
+            border: 1px solid #ddd;
+            padding: 30px;
+            margin-top: 20px;
+            border-radius: 10px;
+            min-height: 297mm;
+            width: 210mm;
+            background-color: #fff;
+            box-sizing: border-box;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        /* Thema layouts professioneel */
+        .theme-modern {
+            font-family: 'Helvetica Neue', sans-serif;
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+        }
+
+        .theme-modern .header {
+            background-color: #007bff;
+            color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+        }
+
+        .theme-modern .header img {
+            width: 100px;
+            height: 100px;
+            object-fit: cover;
+            border-radius: 50%;
+            margin-right: 20px;
+            border: 2px solid #fff;
+        }
+
+        .theme-modern h2 {
+            margin: 0;
+            font-size: 28px;
+        }
+
+        .theme-modern p.contact {
+            font-size: 14px;
+            margin: 5px 0;
+        }
+
+        .theme-modern .section-title {
+            color: #007bff;
+            font-size: 18px;
+            margin-top: 20px;
+            border-bottom: 2px solid #007bff;
+            padding-bottom: 3px;
+        }
+
+        .theme-modern ul {
+            padding-left: 20px;
+        }
+
+        .theme-modern .cv-content {
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+        }
+
+        /* Elegant thema */
+        .theme-elegant {
+            font-family: 'Palatino Linotype', serif;
+            color: #3e3e3e;
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+        }
+
+        .theme-elegant .header {
+            border-bottom: 4px solid #8b0000;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+        }
+
+        .theme-elegant .header img {
+            width: 100px;
+            height: 100px;
+            object-fit: cover;
+            border-radius: 50%;
+            margin-right: 20px;
+            border: 2px solid #8b0000;
+        }
+
+        .theme-elegant h2 {
+            font-size: 30px;
+        }
+
+        .theme-elegant p.contact {
+            font-style: italic;
+            font-size: 14px;
+            margin: 3px 0;
+        }
+
+        .theme-elegant .section-title {
+            color: #8b0000;
+            font-size: 20px;
+            margin-top: 20px;
+            border-bottom: 1px solid #8b0000;
+        }
+
+        .theme-elegant ul {
+            padding-left: 20px;
+        }
+
+        .theme-elegant .cv-content {
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+        }
+
+        #downloadBtn {
+            display: none;
+            margin-top: 10px;
+        }
+
+        .theme-classic {
+            font-family: Georgia, serif;
+            color: #2c2c2c;
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+        }
+
+        .theme-classic .header {
+            padding: 15px;
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+        }
+
+        .theme-classic .header img {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            margin-right: 15px;
+            border: 1px solid #999;
+        }
+
+        .theme-classic h2 {
+            font-size: 28px;
+            font-weight: 500;
+            margin: 0;
+        }
+
+        .theme-classic p.contact {
+            font-size: 13px;
+            margin: 3px 0;
+            font-weight: 400;
+        }
+
+        .theme-classic .section-title {
+            font-size: 18px;
+            margin-top: 15px;
+            border-bottom: 1px solid #aaa;
+            font-weight: 500;
+        }
+
+        .theme-classic ul {
+            padding-left: 20px;
+            margin: 5px 0;
+            font-weight: 400;
+        }
+
+        .theme-classic .cv-content {
+            flex-grow: 1;
+        }
+
+        /* Split layout: werkervaring links, stage/rechts */
+        .theme-split {
+            font-family: 'Arial', sans-serif;
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+        }
+
+        .theme-split .header {
+            background-color: #f0f0f0;
+            padding: 20px;
+            border-radius: 6px;
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+        }
+
+        .theme-split .header img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            margin-right: 20px;
+        }
+
+        .theme-split h2 {
+            font-weight: 500;
+            font-size: 28px;
+            margin: 0;
+        }
+
+        .theme-split p.contact {
+            font-size: 13px;
+            margin: 5px 0;
+            font-weight: 400;
+        }
+
+        .theme-split .cv-content {
+            display: flex;
+            flex-grow: 1;
+            gap: 20px;
+        }
+
+        .theme-split .left,
+        .theme-split .right {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .theme-split .section-title {
+            font-size: 17px;
+            margin-top: 10px;
+            border-bottom: 1px solid #007bff;
+            font-weight: 500;
+            padding-bottom: 2px;
+        }
+
+        .theme-split ul {
+            padding-left: 15px;
+            font-weight: 400;
+            margin: 3px 0;
+        }
+
+        /* Minimal layout */
+        .theme-minimal {
+            font-family: 'Helvetica', sans-serif;
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+        }
+
+        .theme-minimal .header {
+            padding: 15px;
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+        }
+
+        .theme-minimal .header img {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            margin-right: 15px;
+        }
+
+        .theme-minimal h2 {
+            font-weight: 400;
+            font-size: 26px;
+            margin: 0;
+        }
+
+        .theme-minimal p.contact {
+            font-size: 12px;
+            margin: 3px 0;
+            font-weight: 300;
+        }
+
+        .theme-minimal .section-title {
+            font-size: 16px;
+            margin-top: 10px;
+            border-bottom: 1px solid #ccc;
+            font-weight: 400;
+        }
+
+        .theme-minimal ul {
+            padding-left: 15px;
+            font-weight: 300;
+            margin: 2px 0;
+        }
+
+        .theme-minimal .cv-content {
+            flex-grow: 1;
+        }
+
+        /* Split layout verbeterd */
+        .theme-split .cv-content {
+            display: flex;
+            flex-direction: row;
+            flex-grow: 1;
+            gap: 20px;
+            height: 100%;
+            /* Vul de volledige hoogte van A4 */
+        }
+
+        .theme-split .left,
+        .theme-split .right {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            height: 100%;
+            /* Zorg dat kolommen dezelfde hoogte hebben */
+            padding-bottom: 20px;
+        }
+
+        /* Optioneel: subtiele achtergrond voor rechterkolom om lege ruimte te breken */
+        .theme-split .right {
+            background-color: #f8f9fa;
+            border-radius: 6px;
+            padding: 15px;
+        }
