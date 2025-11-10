@@ -17,6 +17,8 @@
 </head>
 
 <body>
+    <div class="progress-bar"></div>
+
     <div class="content-wrapper">
         <nav class="side-nav d-flex flex-column">
             <div class="logo text-center py-3">
@@ -317,6 +319,24 @@
                     }
                 }).catch(error => alert('Er is iets misgegaan. Probeer het opnieuw.'));
             });
+
+            const progressBar = document.querySelector('.progress-bar');
+
+            window.addEventListener('scroll', () => {
+                const scrollTop = window.scrollY;
+                const docHeight = document.body.scrollHeight - window.innerHeight;
+                const scrollPercent = (scrollTop / docHeight) * 100;
+
+                progressBar.style.width = scrollPercent + '%';
+
+                if (scrollTop > 0) {
+                    progressBar.classList.add('visible');
+                } else {
+                    progressBar.classList.remove('visible');
+                }
+            });
+
+
         </script>
     </div>
 </body>
